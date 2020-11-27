@@ -1,0 +1,453 @@
+/* -------reset------- */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Montserrat";
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+a {
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: white;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover {
+  color: #f2cb05 !important;
+  text-decoration: none;
+}
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 50px;
+}
+.btn {
+  border: solid #f2cb05 1px;
+  border-radius: 50px;
+  padding: 8px 30px;
+  color: #f2cb05;
+}
+.btn:hover {
+  color: white !important;
+  background-color: #f2cb05;
+}
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+/* ------FONTS------- */
+
+@font-face {
+  font-family: "DroidSerif";
+  src: url("fonts/DroidSerif-Regular.ttf") format("truetype");
+
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "PepperSauce";
+  src: url("fonts/PepperSauce.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --------Nav------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+nav img {
+  height: 75px;
+  width: 75px;
+  margin: 35px;
+  transition: 0.4s ease-in-out;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  justify-content: space-between;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* --------Header------- */
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  border-bottom: 1px solid #ffffff75;
+  transition: 0.4s ease-in-out;
+}
+header.fix-white {
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+header.fix-white a {
+  color: black;
+}
+header.fix-white img {
+  height: 50px;
+  width: 50px;
+  margin: 15px 50px;
+}
+.current a {
+  color: #f2cb05 !important;
+}
+
+/* ------Home------- */
+
+#home {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#home h1 {
+  color: white;
+  font-family: "PepperSauce";
+  margin: 0;
+  padding: 0;
+  font-size: 68px;
+  transform: rotate(-1.5deg) skew(-10deg);
+}
+.go {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.go:hover {
+  background-color: #fff;
+}
+.go i {
+  padding-top: 15px;
+}
+
+/* ------Skills------- */
+
+#skills {
+  padding: 100px 0;
+}
+#skills p {
+  text-align: justify;
+  line-height: 40px;
+}
+#skills .icon {
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+  color: #f2cb05;
+}
+
+/* ------Nos Burgers------- */
+#nos-burger {
+  padding: 100px 0;
+  background-color: black;
+}
+#nos-burger h2 {
+  color: white;
+}
+#nos-burger .card {
+  height: 300px;
+  widows: 300px;
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  opacity: 0.5;
+  transition: 0.2s ease-in;
+  position: relative;
+  cursor: pointer;
+}
+
+.card h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  color: #f2cb05;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #f2cb05;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.card:hover span {
+  opacity: 1;
+  bottom: 10px;
+  right: 10px;
+}
+.card:hover h3 {
+  opacity: 1;
+  top: 5%;
+  left: 5%;
+}
+#nos-burger .card:hover {
+  opacity: 1;
+}
+#nos-burger img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------Notre carte------- */
+#notre-carte {
+  padding: 100px 0;
+}
+
+#notre-carte h2 {
+  font-family: "PepperSauce";
+}
+#notre-carte h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.menu-price {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+#notre-carte h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.wrap-ingredient span {
+  color: #594302;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ------Nous trouver------- */
+
+#nous-trouver {
+  padding: 100px 0;
+  background-color: black;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#nous-trouver img {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+
+#nous-trouver h2 {
+  color: white;
+}
+#nous-trouver iframe {
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+}
+#nous-trouver p {
+  color: white;
+}
+.fries-left-top {
+  top: -9px;
+  left: 9%;
+}
+.fries-right-bottom {
+  top: 70%;
+  left: 69%;
+}
+.fries-right-top {
+  top: 10%;
+  right: -65px;
+}
+.fries-left-bottom {
+  top: 60%;
+  left: -1%;
+}
+
+/* ------Devise------- */
+#devise {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#devise p {
+  font-family: "DroidSerif";
+  font-size: 64px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  cursor: default;
+}
+/* ------Actus------- */
+#actus {
+  padding: 100px 0;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#actus h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+#actus p {
+  font-size: 16px;
+  font-weight: 200;
+}
+/* ------Horaires------- */
+#nos-horaires {
+  padding: 100px 0;
+}
+#nos-horaires h2 {
+  font-weight: 900;
+}
+#nos-horaires span {
+  color: #d94f30;
+}
+.menu-horaire {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+  border-bottom: 1px black solid;
+}
+.slider a {
+  display: block;
+  border: 4px solid transparent;
+}
+.slider a:hover {
+  border: 4px solid white;
+}
+.slider img {
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
+}
+.slider img:hover {
+  filter: grayscale(0%);
+}
+
+/* footer */
+footer {
+  padding-top: 100px;
+  height: 50vh;
+  background-image: linear-gradient(to right, #363636 0%, black 100%);
+  color: white;
+  font-size: 18px;
+}
+footer i {
+  color: #f2cb05;
+  font-size: 30px;
+  opacity: 0.7;
+}
+footer i:hover {
+  opacity: 1;
+}
+footer .contact-infos {
+  font-size: 14px;
+}
+.text-center * {
+  margin-bottom: 15px;
+}
+.contact-email {
+  margin-bottom: 50px;
+}
+.contact-icons {
+  margin-bottom: 100px;
+}
+@media (max-width: 575.98px) {
+    h2{
+        font-size: 30px;
+    }
+  #home h1 {
+    font-size: 24px;
+  }
+  .slider img {
+    height: 300px;
+    width: 100%;
+  }
+
+  #notre-carte h4 {
+    font-size: 16px;
+  }
+  .wrap-ingredient span {
+    color: #594302;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .fries-left-top {
+    display: none;
+  }
+  .fries-right-bottom {
+    display: none;
+  }
+  .fries-right-top {
+    display: none;
+  }
+  .fries-left-bottom {
+    display: none;
+  }
+
+  #nos-burger .card{
+    margin-bottom: 30px;
+  }
+  #devise{
+      height: 30vh;
+  }
+  #devise p {
+      font-size: 30px;
+  }
+  #nous-trouver p {
+      font-size: 14px;
+  }
+  .menu-horaire h4{
+      font-size: 24px;
+  }
+  .menu-horaire p{
+      font-size: 14px;
+  }
+}
