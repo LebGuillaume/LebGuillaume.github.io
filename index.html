@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="slick-theme.css">
   <link rel="stylesheet" href="slick.css">
   <link rel="stylesheet" href="style.css">
@@ -28,6 +30,23 @@
 </head>
 
 <body>
+  <div class="bgcolor">
+    <a class="burger-menu" href="#"><i class="fas fa-bars"></i></a>
+    <img class="logo-resp" src="img/Logosanspolice.svg" alt="">
+  </div>
+  <div class="menu-mobile">
+    <a class="close-menu" href="#"><i class="far fa-times-circle"></i></a>
+    <ul class="list-category">
+      <li class="current"><a href="#home">Accueil</a></li>
+      <li><a href="#skills">A Propos</a></li>
+      <li><a href="#nos-burger">Nos Burger</a></li>
+
+      <li><a href="#nous-trouver">Nous trouver</a></li>
+      <li><a href="#nos-horaires">Nos horaires</a></li>
+    </ul>
+  </div>
+
+
   <!-- Header -->
   <header class="d-none d-sm-block">
 
@@ -40,23 +59,20 @@
 
         <li><a href="#nous-trouver">Nous trouver</a></li>
         <li><a href="#nos-horaires">Nos horaires</a></li>
-
-
-
-
       </ul>
     </nav>
   </header>
+
   <section id="home" data-parallax="scroll" data-speed="0.2" data-image-src="img/banner-img-min.jpg">
     <h1>La Friterie Sensas vous accueil !</h1>
-    <a href="#" class="go"><i class="fas fa-angle-down"></i></a>
+    <a href="#" class="go animate__infinite animate__animated animate__pulse"><i class="fas fa-angle-down"></i></a>
 
   </section>
   <!-- Skills -->
   <section id="skills">
-    <h2>A propos</h2>
+    <h2 data-aos="fade-up">A propos</h2>
     <div class="container">
-      <div class="row ">
+      <div class="row " data-aos="zoom-in">
         <div class="col-md-4">
           <div class="icon"><i class="fas fa-utensils"></i></div>
           <p>
@@ -65,7 +81,7 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, ullam
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in">
           <div class="icon"><i class="fas fa-cookie-bite"></i></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eius?
@@ -73,7 +89,7 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, ullam
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in">
           <div class="icon"><i class="fas fa-coffee"></i></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -82,7 +98,7 @@
           </p>
         </div>
       </div>
-      <div class="text-center mt-5">
+      <div class="text-center mt-5" data-aos="fade-up"> 
         <a href="#nos-burger" class="btn">Commandez un burger</a>
       </div>
     </div>
@@ -90,18 +106,18 @@
   </section>
   <!-- Nos Burger -->
   <section id="nos-burger">
-    <h2>Nos burgers</h2>
+    <h2 data-aos="fade-up">Nos burgers</h2>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <img src="img/Burger-1-min.jpg" alt="">
             <h3>Le JM</h3>
             <span>5.90€</span>
           </div>
         </div>
         <div class="col-md-4 mt-sm-3">
-          <div class="card">
+          <div class="card" >
             <img src="img/Burger-2-min.jpg" alt="">
             <h3>Le JM</h3>
             <span>5.90€</span>
@@ -114,21 +130,21 @@
             <span>5.90€</span>
           </div>
         </div>
-        <div class="col-md-4  mt-sm-5 mt-sm-3">
-          <div class="card">
+        <div class="col-md-4  mt-sm-5">
+          <div class="card" >
             <img src="img/Burger-4-min.jpg" alt="">
             <h3>Le JM</h3>
             <span>5.90€</span>
           </div>
         </div>
-        <div class="col-md-4 mt-sm-5 mt-sm-3">
-          <div class="card">
+        <div class="col-md-4 mt-sm-5">
+          <div class="card" >
             <img src="img/Burger-1-min.jpg" alt="">
             <h3>Le Barbeuq'</h3>
             <span>5.90€</span>
           </div>
         </div>
-        <div class="col-md-4 mt-sm-5 mt-sm-3">
+        <div class="col-md-4 mt-sm-5 ">
           <div class="card">
             <img src="img/Burger-2-min.jpg" alt="">
             <h3>Le JM</h3>
@@ -226,7 +242,7 @@
   <!--Devise-->
   <section id="devise" data-parallax="scroll" data-speed="0.2" data-image-src="img/friterie.jpg">
     <div class="container">
-      <p>"Le plaisir de manger simple"</p>
+      <p data-aos="fade-in">"Le plaisir de manger simple"</p>
     </div>
   </section>
 
@@ -813,5 +829,13 @@
 <script src="js/Scrollsmooth.js"></script>
 <script src="js/tilte.js"></script>
 <script src="https://kit.fontawesome.com/4cd49eb5f6.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    delay: 100,
+    duration:1000,
+    easing: "ease"
+  });
+</script>
 
 </html>

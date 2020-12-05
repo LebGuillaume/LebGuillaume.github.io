@@ -399,10 +399,86 @@ footer .contact-infos {
 .contact-icons {
   margin-bottom: 100px;
 }
+
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  font-size: 30px;
+  background-color: black;
+  padding: 5px 10px;
+}
+.close-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+.logo-resp {
+  display: none;
+}
+.menu-mobile ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  margin: 100px 0 0 0;
+  
+}
+.menu-mobile {
+  display: none;
+}
+.menu-mobile ul li a{
+  font-family: "PepperSauce" !important;
+  font-size: 40px;
+}
+@media (max-width: 768px) {
+  header ul li {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  
+}
+@media (max-width: 1024px) {
+  .list-category{
+    width: 100%;
+  }
+  
+}
+
 @media (max-width: 575.98px) {
-    h2{
-        font-size: 30px;
-    }
+  .menu-mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #363636 0%, black 100%);
+    z-index: 60;
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .logo-resp {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 20;
+    height: 50px;
+    width: 50px;
+    display: block;
+    transition: 0.4s ease-in-out;
+  }
+  .menu-mobile .logo-resp{
+    text-align: center;
+    
+  }
+  h2 {
+    font-size: 30px;
+  }
   #home h1 {
     font-size: 24px;
   }
@@ -432,22 +508,25 @@ footer .contact-infos {
     display: none;
   }
 
-  #nos-burger .card{
+  #nos-burger .card {
     margin-bottom: 30px;
   }
-  #devise{
-      height: 30vh;
+  #devise {
+    height: 30vh;
   }
   #devise p {
-      font-size: 30px;
+    font-size: 30px;
   }
   #nous-trouver p {
-      font-size: 14px;
+    font-size: 14px;
   }
-  .menu-horaire h4{
-      font-size: 24px;
+  .menu-horaire h4 {
+    font-size: 24px;
   }
-  .menu-horaire p{
-      font-size: 14px;
+  .menu-horaire p {
+    font-size: 14px;
+  }
+  .slick-next {
+    display: none !important;
   }
 }

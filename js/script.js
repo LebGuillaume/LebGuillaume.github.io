@@ -5,6 +5,16 @@ $(function () {
   //     maxGlare: 0.2,
   //   });
 
+  $(".burger-menu").click(function (e) {
+   
+    $(".menu-mobile").slideDown();
+    e.preventDefault();
+  });
+  $(".close-menu").click(function (e) {
+    $(".menu-mobile").slideUp();
+    e.preventDefault();
+  
+  });
   //onePageNav
 
   //sliderActus
@@ -14,17 +24,23 @@ $(function () {
     autoplay: true,
     pauseOnHover: true,
     dots: true,
+    infinite: false,
     responsive: [
-    {
-      breakpoint: 570,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }]
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $("nav#menu").onePageNav();
+  $(".menu-mobile ul").onePageNav({
+    end: function () {
+      $(".menu-mobile").slideUp();
+    },
+  });
 
   // scroll a propos
   $(".go").click(function (e) {
@@ -53,16 +69,15 @@ $(function () {
     $("h1").css({ opacity: 1 - OpScroll });
   });
 
-
-    $('[data-fancybox="gallery"]').fancybox({
-      buttons: [
-        //"zoom",
-        "share",
-        //"slideShow",
-        "fullScreen",
-        "download",
-        "thumbs",
-        "close",
-      ],
-    });
+  $('[data-fancybox="gallery"]').fancybox({
+    buttons: [
+      //"zoom",
+      "share",
+      //"slideShow",
+      "fullScreen",
+      "download",
+      "thumbs",
+      "close",
+    ],
+  });
 });
